@@ -1,0 +1,1604 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/1-sm.png",
+      "img_lg": "/assets/upcoming/img/music/1-lg.png",
+      "date": "2025-11-15",
+      "hour": "20:00",
+      "title": "Rock Legends Live Concert",
+      "location": "Espaço das Américas, São Paulo",
+      "price_id": "price_1Rskf8CJ1u0SzKZz7HfFlpSF",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "2",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/2-sm.png",
+      "img_lg": "/assets/upcoming/img/music/2-lg.png",
+      "date": "2025-12-05",
+      "hour": "19:00",
+      "title": "Jazz Night Live",
+      "location": "Vivo Rio, Rio de Janeiro",
+      "price_id": "price_1RskdnCJ1u0SzKZzTCSn5igq",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "3",
+      "type": "art",
+      "img_sm": "/assets/upcoming/img/art/3-sm.png",
+      "img_lg": "/assets/upcoming/img/art/3-lg.png",
+      "date": "2025-12-20",
+      "hour": "10:00",
+      "title": "Festival de Arte Urbana",
+      "location": "Vila Madalena, São Paulo",
+      "price_id": "price_1RskppCJ1u0SzKZzk7lL4VBL",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "4",
+      "type": "art",
+      "img_sm": "/assets/upcoming/img/art/2-sm.png",
+      "img_lg": "/assets/upcoming/img/art/2-lg.png",
+      "date": "2025-11-01",
+      "hour": "11:00",
+      "title": "Exposição de Arte Impressionista",
+      "location": "Museu de Arte de São Paulo (MASP), São Paulo",
+      "price_id": "price_1RskqFCJ1u0SzKZzAAkTZ2ef",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.paintings.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "5",
+      "type": "art",
+      "img_sm": "/assets/upcoming/img/art/1-sm.png",
+      "img_lg": "/assets/upcoming/img/art/1-lg.png",
+      "date": "2025-11-10",
+      "hour": "18:00",
+      "title": "Exposição de Art Nouveau",
+      "location": "Museu Nacional de Belas Artes, Rio de Janeiro",
+      "price_id": "price_1RskrMCJ1u0SzKZzFpno2rgr",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "6",
+      "type": "food",
+      "img_sm": "/assets/upcoming/img/food/1-sm.png",
+      "img_lg": "/assets/upcoming/img/food/1-lg.png",
+      "date": "2025-11-20",
+      "hour": "14:00",
+      "title": "Festival Gastronômico Gourmet",
+      "location": "Parque Ibirapuera, São Paulo",
+      "price_id": "price_1RskrqCJ1u0SzKZzmmP4RpTQ",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "7",
+      "type": "food",
+      "img_sm": "/assets/upcoming/img/food/2-sm.png",
+      "img_lg": "/assets/upcoming/img/food/2-lg.png",
+      "date": "2025-12-10",
+      "hour": "12:00",
+      "title": "Aula de Culinária Vegan Delights",
+      "location": "Escola de Culinária Le Cordon Bleu, Rio de Janeiro",
+      "price_id": "price_1RsktYCJ1u0SzKZzxUcF1zD5",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "8",
+      "type": "sport",
+      "img_sm": "/assets/upcoming/img/sport/2-sm.png",
+      "img_lg": "/assets/upcoming/img/sport/2-lg.png",
+      "date": "2025-12-15",
+      "hour": "09:30",
+      "title": "Torneio Internacional de Críquete",
+      "location": "Estádio do Morumbi, São Paulo",
+      "price_id": "price_1RsktYCJ1u0SzKZzxUcF1zD5",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "9",
+      "type": "sport",
+      "img_sm": "/assets/upcoming/img/sport/1-sm.png",
+      "img_lg": "/assets/upcoming/img/sport/1-lg.png",
+      "date": "2025-11-25",
+      "hour": "16:00",
+      "title": "Final do Campeonato Brasileiro de Basquete",
+      "location": "Ginásio do Ibirapuera, São Paulo",
+      "price_id": "price_1Rsku2CJ1u0SzKZz0UBaALUV",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "10",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/3-sm.png",
+      "img_lg": "/assets/upcoming/img/music/3-lg.png",
+      "date": "2025-12-25",
+      "hour": "20:00",
+      "title": "Performance de Sinfonia Clássica",
+      "price_id": "price_1RskuXCJ1u0SzKZzoJRb88A0",
+      "location": "Theatro Municipal, Rio de Janeiro",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "11",
+      "type": "food",
+      "img_sm": "/assets/upcoming/img/food/3-sm.png",
+      "img_lg": "/assets/upcoming/img/food/3-lg.png",
+      "date": "2025-09-01",
+      "hour": "14:00",
+      "title": "Festival de Churrasco Extravaganza",
+      "location": "Parque da Cidade, Brasília",
+      "price_id": "price_1RskutCJ1u0SzKZzyJXVScb2",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "12",
+      "type": "sport",
+      "img_sm": "/assets/upcoming/img/sport/3-sm.png",
+      "img_lg": "/assets/upcoming/img/sport/3-lg.png",
+      "date": "2025-09-05",
+      "hour": "17:00",
+      "title": "Eliminatórias da Copa do Mundo de Futebol",
+      "location": "Arena Corinthians, São Paulo",
+      "price_id": "price_1RskvNCJ1u0SzKZzRupx8phr",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "13",
+      "type": "art",
+      "img_sm": "/assets/upcoming/img/art/4-sm.png",
+      "img_lg": "/assets/upcoming/img/art/4-lg.png",
+      "date": "2025-08-10",
+      "hour": "18:00",
+      "title": "Simpósio de Arte Moderna",
+      "location": "Instituto Tomie Ohtake, São Paulo",
+      "price_id": "price_1RskvsCJ1u0SzKZzpLF9SQzK",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "14",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/4-sm.png",
+      "img_lg": "/assets/upcoming/img/music/4-lg.png",
+      "date": "2025-08-15",
+      "hour": "19:00",
+      "title": "Performance de Gala de Ópera",
+      "location": "Teatro Amazonas, Manaus",
+      "price_id": "price_1RskwaCJ1u0SzKZzyiuRr65A",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "15",
+      "type": "food",
+      "img_sm": "/assets/upcoming/img/food/4-sm.png",
+      "img_lg": "/assets/upcoming/img/food/4-lg.png",
+      "date": "2025-11-20",
+      "hour": "13:00",
+      "title": "Masterclass de Sushi",
+      "location": "Escola de Culinária Nihonryori, São Paulo",
+      "price_id": "price_1Rskx3CJ1u0SzKZzF15KKJYQ",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    },
+    {
+      "id": "16",
+      "type": "sport",
+      "img_sm": "/assets/upcoming/img/sport/4-sm.png",
+      "img_lg": "/assets/upcoming/img/sport/4-lg.png",
+      "date": "2025-12-23",
+      "hour": "10:00",
+      "title": "Campeonato Brasileiro de Tênis",
+      "location": "Parque Olímpico, Rio de Janeiro",
+      "price_id": "price_1RskxVCJ1u0SzKZzCB734M5G",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ],
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ],
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ],
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "17",
+      "type": "art",
+      "img_sm": "/assets/upcoming/img/art/5-sm.png",
+      "img_lg": "/assets/upcoming/img/art/5-lg.png",
+      "date": "2025-11-11",
+      "hour": "11:00",
+      "title": "Exposição de Fotografia",
+      "location": "Pinacoteca de São Paulo, São Paulo",
+      "price_id": "price_1RskxsCJ1u0SzKZzLatVlaz8",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "18",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/5-sm.png",
+      "img_lg": "/assets/upcoming/img/music/5-lg.png",
+      "date": "2025-09-05",
+      "hour": "20:00",
+      "title": "Festival de Indie Rock",
+      "location": "Fundição Progresso, Rio de Janeiro",
+      "price_id": "price_1RskyWCJ1u0SzKZzHUA2amyY",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": false
+    },
+    {
+      "id": "19",
+      "type": "food",
+      "img_sm": "/assets/upcoming/img/food/5-sm.png",
+      "img_lg": "/assets/upcoming/img/food/5-lg.png",
+      "date": "2025-04-10",
+      "hour": "12:00",
+      "title": "Festival de Comida Vegana",
+      "price_id": "price_1Rskz4CJ1u0SzKZzPL61wFFY", 
+      "location": "Parque da Jaqueira, Recife",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+      "seats": [
+        {
+          "seat": "frontseat",
+          "price": 100
+        },
+        {
+          "seat": "backseat",
+          "price": 60
+        },
+        {
+          "seat": "vip",
+          "price": 150
+        }
+      ],
+      "organizers": [
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-1.png",
+          "name": "Ellie Black",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        },
+        {
+          "img_avatar": "/assets/organizers/organizer-avt-2.png",
+          "name": "Amelie Laurent",
+          "job": "Concert Manager",
+          "social": [
+            {
+              "icon": "/assets/organizers/social/x.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/instagram.svg",
+              "path": ""
+            },
+            {
+              "icon": "/assets/organizers/social/pinterest.svg",
+              "path": ""
+            }
+          ]
+        }
+      ],
+      "recommended": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-black font-primary;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply font-primary; 
+}
+
+.h1 {
+  @apply text-4xl xl:text-[70px] font-bold xl:leading-[78px] uppercase;
+}
+
+.h2 {
+  @apply text-3xl xl:text-[44px] leading-[120%] font-semibold;
+}
+
+.h3 {
+  @apply text-3xl xl:text-[32px] leading-[110%] font-medium;
+}
+
+.h4 {
+  @apply text-lg;
+}
+
+.pretitle {
+  @apply font-secondary text-4xl xl:text-[46px] leading-[110%] text-accent;
+}
+
+.btn {
+  @apply min-w-[112px] h-[48px] rounded-full flex items-center justify-center text-sm font-medium transition-all;
+}
+
+.btn-accent {
+  @apply bg-accent hover:bg-accent-hover;
+}
+
+.btn-secondary{
+  @apply bg-secondary;
+}
+
+.btn-tertiary {
+  @apply bg-tertiary hover:bg-tertiary-hover;
+} 
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  @apply bg-accent;
+}
