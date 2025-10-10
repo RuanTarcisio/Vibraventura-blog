@@ -17,22 +17,7 @@ const Home = () => {
     <div>
       <Hero />
       <div className="flex flex-col justify-center items-center"></div>
-      {showEventList ? (
-        <div className="container mx-auto">
-          <EventList />
-        </div>
-      ) : (
-        <div>
-          <div className="container mx-auto">
-            {/* upcoming events slider */}
-            <UpcomingEvents />
-            {/* download app section */}
-            <DownloadApp />
-            {/* recomended events slider*/}
-            <RecommendedEvents />
-          </div>
-        </div>
-      )}
+      HomePage
     </div>
   );
 };
