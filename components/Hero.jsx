@@ -6,40 +6,51 @@ const Hero = () => {
   const { handleClearSearch } = useContext(EventContext);
 
   return (
-    <section className="h-screen xl:h-[800px] mb-16 relative">
-      <div className="container mx-auto h-full flex flex-col justify-center items-center pt-12 xl:pt-0">
-        <div className="w-full max-w-[684px] text-center mx-auto flex flex-col gap-2">
-          <div className="pretitle">Uncover New Moments</div>
-          <h1 className="h1">
-            Discover Events <br /> & Experiences
+    <section className="relative flex flex-col justify-center items-center min-h-[90vh] xl:min-h-[800px] py-20 px-4 text-center overflow-hidden">
+      {/* BG com gradiente sobre imagem */}
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url(/assets/hero/hero.jpg)", // ou sua imagem
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed", // efeito parallax
+          }}
+        />
+        
+      </div>
+
+      {/* Conteúdo */}
+      <div className="container mx-auto flex flex-col items-center justify-center gap-6 max-w-[680px] relative z-10">
+        <div className="flex flex-col gap-2">
+          <div className="pretitle mt-14 text-accent">Viva novas emoções</div>
+          <h1 className="h1 leading-tight text-white">
+            Conecte-se com a natureza <br /> e viva a aventura
           </h1>
-          <p className="text-sm xl:text-lg font-light text-white/80 mb-4 xl:mb-12 max-w-[480px] xl:max-w-none mx-auto">
-            Join a vibrant community where you can explore global happenins and
-            share memorale moments with frends and family.
+          <p className="text-sm md:text-base xl:text-lg font-light text-white mb-4 xl:mb-10 max-w-[480px] mx-auto">
+            O Vibraventura conecta pessoas a experiências únicas de turismo e esportes
+            radicais. Descubra lugares incríveis, explore seu limite e compartilhe
+            momentos que fazem o coração vibrar.
           </p>
         </div>
 
-        <div className="">
+        {/* Search */}
+        <div className="w-full flex flex-col items-center gap-3">
           <Searchbar />
-          <div className="w-full mt-3 relative flex flex-col justify-center ">
-            <p className="text-sm italic font-light text-white/70 text-center mb-3 xl:mb-0">
-              Please select at least one field or leave them empty to see all
-              events.
+          <div className="w-full flex flex-col xl:flex-row justify-center xl:justify-between items-center">
+            <p className="text-xs md:text-sm italic font-light text-white text-center">
+              Explore por atividade, local ou categoria — ou veja todas as experiências.
             </p>
-            {/* clear search */}
             <button
-              onClick={() => handleClearSearch()}
-              className="text-accent text-sm xl:absolute right-0"
+              onClick={handleClearSearch}
+              className="text-accent text-sm mt-2 xl:mt-0 hover:underline transition-all"
             >
-              clear search
+              Limpar busca
             </button>
           </div>
         </div>
       </div>
-      {/* bg 1 */}
-      <div className="absolute bg-red top-0 left-0 w-[50vw] h-full bg-hero_1 bg-blend-color-dodge bg-no-repeat bg-cover -z-10 opacity-80"></div>
-      {/* bg 2 */}
-      <div className="absolute bg-red top-0 right-0 w-[50vw] h-full bg-hero_2 bg-blend-lighten bg-no-repeat bg-cover -z-10 opacity-90"></div>
     </section>
   );
 };

@@ -32,7 +32,7 @@ body {
 }
 
 .pretitle {
-  @apply font-secondary text-4xl xl:text-[46px] leading-[110%] text-accent;
+  @apply font-secondary text-4xl xl:text-[46px] leading-[110%] text-lime-400;
 }
 
 .btn {

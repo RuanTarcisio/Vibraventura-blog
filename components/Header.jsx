@@ -18,25 +18,25 @@ const Header = () => {
   const { cartCount, handleCartClick } = useShoppingCart();
 
   return (
-    <header className="fixed  left-0 right-0 z-10">
-      <div className="container mx-auto h-full border-b border-white/10 py-4 xl:py-6">
+    <header className="w-full absolute top-0 left-0 z-50 bg-transparent">
+      <div className="container mx-auto h-full border-b border-white/20 py-4 xl:py-6">
         <div className="flex justify-between items-center h-full">
           {/* logo */}
           <Link href={"/"}>
             <Image
-              src={"/assets/header/logo2.png"}
-              width={70}
-              height={70}
+              src={"/assets/header/logo6.png"}
+              width={80}
+              height={80}
               alt=""
             />
           </Link>
-          <div className="flex gap-[26px] items-center ">
+          <div className="flex gap-[26px] items-center">
             <Nav />
             <div
               onClick={() => handleCartClick()}
               className="relative cursor-pointer"
             >
-              <CgShoppingBag className="text-[26px]" />
+              <CgShoppingBag className="text-[26px] text-white" />
               <div className="bg-accent h-[18px] w-[18px] absolute -bottom-1 -right-1 rounded-full text-white flex items-center justify-center text-sm font-medium">
                 {cartCount}
               </div>

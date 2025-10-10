@@ -49,7 +49,7 @@ export default {
       backgroundImage: {
             hero_main_bg: "url(/assets/hero/herobg.png)",
  // Opacidades reduzidas para 30% e 20%
-
+        hero: "url(/assets/hero/hero.jpg)",
         hero_1: "url(/assets/hero/heroNatureza.jpg)",
         hero_2: "url(/assets/hero/heroRadical.jpg)",
         pattern: "url(/assets/pattern_bg.png)",
