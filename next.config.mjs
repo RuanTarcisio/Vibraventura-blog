@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
+  /*async rewrites() {
     return {
       beforeFiles: [
         {
@@ -9,6 +9,6 @@ const nextConfig = {
         }
       ]
     }
-  }
+  }*/
 }
 export default nextConfig

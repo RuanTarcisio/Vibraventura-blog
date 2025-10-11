@@ -20,7 +20,7 @@ const EventCategories = () => {
   // const [filteredEvents, setFilteredEvents] = useState([]);
   console.log(events);
   const uniqueTypes = [
-    "All type",
+    "Todos os tipos",
     ...new Set(events.map((event) => event.type)),
   ];
 

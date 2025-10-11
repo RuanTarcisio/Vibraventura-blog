@@ -19,7 +19,6 @@ const Home = () => {
       <ScrollIndicator />
       <Hero />
       <div className="flex flex-col justify-center items-center"></div>
-      HomePage
     </div>
   );
 };

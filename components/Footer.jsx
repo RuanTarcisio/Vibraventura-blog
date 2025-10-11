@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,9 +21,38 @@ const socials = [
     src: "/assets/footer/internet1.svg",
     path: "https://devcorreria.vercel.app/",
   },
+  {
+    src: "/assets/footer/youtube.svg",
+    path: "https://youtube.com/@vibraventuraoficial",
+  },
 ];
 
 const Footer = () => {
+
+  const [form, setForm] = useState({ nome: "", email: "", telefone: "", mensagem: "" });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    const res = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+    setMessage(data.message);
+    setLoading(false);
+    setForm({ nome: "", email: "", telefone: "", mensagem: "" });
+  }; 
+
   return (
     <footer className="bg-accent bg-pattern bg-cover bg-blend-multiply pt-16">
       <div className="container mx-auto border-b border-white/40">
@@ -29,18 +60,52 @@ const Footer = () => {
         <div className="flex flex-col max-w-[550px] mx-auto text-center">
           {/* text */}
           <div className="mb-9">
-            <h2 className="h2 mb-3">Your Event Connection</h2>
-            <p>Join our list for exclusice event updates and insider tips.</p>
+            <h2 className="h2 mb-3">Vibre conosco nessa<br/> aventura</h2>
+            <p>Junte-se à nossa lista para atualizações exclusivas.</p>
           </div>
           {/* form */}
-          <form className="relative flex items-center mb-16">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 mb-8">
             <input
+              name="nome"
               type="text"
-              placeholder="Your email address"
-              className="pr-[130px] pl-8 w-full h-[60px] rounded-full outline-none placeholder:text-primary/80 text-primary text-sm"
+              placeholder="Seu nome"
+              value={form.nome}
+              onChange={handleChange}
+              required
+              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
             />
-            <button className="bg-secondary hover:bg-secondary-hover transition-all w-[114px] h-[52px] rounded-full text-sm uppercase absolute right-1">
-              Join
+            <input
+              name="email"
+              type="email"
+              placeholder="Seu melhor email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
+            />
+            <input
+              name="telefone"
+              type="text"
+              placeholder="Seu telefone (opcional)"
+              value={form.telefone}
+              onChange={handleChange}
+              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
+            />
+            <textarea
+              name="mensagem"
+              placeholder="Nos deixe uma mensagem (opcional)"
+              value={form.mensagem}
+              onChange={handleChange}
+              rows={6}
+              className="w-full px-6 py-4 rounded-xl outline-none placeholder:text-gray-400 text-black text-sm shadow-sm focus:shadow-md focus:ring-2 focus:ring-secondary transition-all resize-none bg-white"
+            />
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="bg-secondary hover:bg-secondary-hover transition-all w-full h-[52px] rounded-full text-white font-semibold text-sm uppercase"
+            >
+              {loading ? "Enviado" : "Enviar"}
             </button>
           </form>
           {/* socials */}

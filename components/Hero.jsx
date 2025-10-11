@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="h1 leading-tight text-white">
             Conecte-se com a natureza <br /> e viva a aventura
           </h1>
-          <p className="text-sm md:text-base xl:text-lg font-light text-white mb-4 xl:mb-10 max-w-[480px] mx-auto">
+          <p className="text-sm md:text-base xl:text-lg font-light text-white font-bold mb-4 xl:mb-10 max-w-[480px] mx-auto">
             O Vibraventura conecta pessoas a experiências únicas de turismo e esportes
             radicais. Descubra lugares incríveis, explore seu limite e compartilhe
             momentos que fazem o coração vibrar.
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
 
         {/* Search */}
-        <div className="w-full flex flex-col items-center gap-3">
+        <div className="w-full flex flex-col z items-center gap-3">
           <Searchbar />
           <div className="w-full flex flex-col xl:flex-row justify-center xl:justify-between items-center">
             <p className="text-xs md:text-sm italic font-light text-white text-center">
@@ -45,7 +45,7 @@ const Hero = () => {
             <button
               onClick={handleClearSearch}
               className="text-accent text-sm mt-2 xl:mt-0 hover:underline transition-all"
-            >
+            > 
               Limpar busca
             </button>
           </div>

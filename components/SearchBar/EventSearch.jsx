@@ -15,9 +15,9 @@ const EventSearch = () => {
       <Input
         value={searchTerm}
         type="text"
-        placeholder="Event name or artist"
+        placeholder="Nome da aventura"
         onChange={(e)=> setSearchTerm(e.target.value)}
-        className="w-full p-0  border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+        className="w-full p-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
       />
     </div>
   );

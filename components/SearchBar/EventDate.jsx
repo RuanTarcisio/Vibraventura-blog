@@ -26,11 +26,11 @@ const EventDate = () => {
       </div>
       <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}> {/* Control popover state */}
         <PopoverTrigger asChild>
-          <Button className="w-full justify-start p-0 bg-transparent hover:bg-transparent">
+          <Button className="w-full justify-start p-1 bg-transparent hover:bg-transparent">
             {selectedDate ? (
               format(selectedDate, "PPP", { locale: ptBR }) // Added locale here for proper formatting
             ) : (
-              <span>Pick a date</span>
+              <span>Selecione uma data</span>
             )}
           </Button>
         </PopoverTrigger>

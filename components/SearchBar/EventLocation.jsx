@@ -19,7 +19,7 @@ const EventLocation = () => {
 
   // generate a list of unique locations from future events
   const uniqueLocation = [
-    "All locations", //default locations
+    "Todas as localizações", //default locations
     ...new Set( // set to remove duplicate locations
       events
         .filter((event) => {
@@ -53,16 +53,16 @@ const EventLocation = () => {
         value={selectedLocation}
         onValueChange={(value) => setSelectedLocation(value)}
       >
-        <SelectTrigger className="bg-transparent border-none focus:ring-0 focus:ring-offset-0 text-left p-0">
-          <SelectValue placeholder="Event Location" />
+        <SelectTrigger className="bg-transparent border-none focus:ring-0 focus:ring-offset-0 text-left p-1">
+          <SelectValue placeholder="Localização" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Location </SelectLabel>
+            <SelectLabel>Localização </SelectLabel>
             {uniqueLocation.map((location, index) => {
               return (
                 <SelectItem
-                  value={location == "All location" ? null : location}
+                  value={location == "Todas as localizações" ? null : location}
                   key={index}
                 >
                   {location}

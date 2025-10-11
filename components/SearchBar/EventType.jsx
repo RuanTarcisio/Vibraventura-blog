@@ -16,7 +16,7 @@ const EventType = () => {
   const { events, selectedType, setSelectedType } = useContext(EventContext);
 
   const uniqueTypes = [
-    "All type",
+    "Todos os tipos",
     ...new Set(events.map((event) => event.type)),
   ];
 
@@ -30,16 +30,16 @@ const EventType = () => {
         value={selectedType}
         onValueChange={(value) => setSelectedType(value)}
       >
-        <SelectTrigger className="bg-transparent border-none focus:ring-0 focus:ring-offset-0 text-left p-0 capitalize">
-          <SelectValue placeholder="Event Type" />
+        <SelectTrigger className="bg-transparent border-none focus:ring-0 focus:ring-offset-0 text-left p-1 capitalize">
+          <SelectValue placeholder="Tipo de aventura" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Type </SelectLabel>
+            <SelectLabel>Tipo </SelectLabel>
             {uniqueTypes.map((type, index) => {
               return (
                 <SelectItem
-                  value={type == "All type" ? null : type}
+                  value={type == "Todos os tipos" ? null : type}
                   key={index}
                   className="capitalize"
                 >
