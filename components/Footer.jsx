@@ -63,7 +63,7 @@ const Footer = () => {
             <h2 className="h2 mb-3">Vibre conosco nessa<br/> aventura</h2>
             <p>Junte-se à nossa lista para atualizações exclusivas.</p>
           </div>
-          {/* Formulário*/}
+          {/* Formulário-*/}
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 mb-8">
             <input
               name="nome"
