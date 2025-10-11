@@ -1,28 +1,29 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+// O Image não será mais usado para os ícones sociais
+import Image from "next/image"; 
 import Link from "next/link";
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaGlobe, FaYoutube } from "react-icons/fa";
 
 const socials = [
- 
   {
-    src: "/assets/footer/linkedin.svg",
+    icon: FaLinkedin,
     path: "https://www.linkedin.com/in/ruan-tarcisio/",
   },
   {
-    src: "/assets/footer/instagram2.svg",
+    icon: FaInstagram,
     path: "https://www.instagram.com/dev.correria/",
   },
   {
-    src: "/assets/footer/whatsapp.svg",
+    icon: FaWhatsapp,
     path: "https://wa.me/5571992266662?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os",
   },
   {
-    src: "/assets/footer/internet1.svg",
+    icon: FaGlobe, 
     path: "https://devcorreria.vercel.app/",
   },
   {
-    src: "/assets/footer/youtube.svg",
+    icon: FaYoutube,
     path: "https://youtube.com/@vibraventuraoficial",
   },
 ];
@@ -108,21 +109,25 @@ const Footer = () => {
               {loading ? "Enviado" : "Enviar"}
             </button>
           </form>
-          {/* socials */}
-          <div className="mb-[72px] flex gap-8 mx-auto">
-            {socials.map((icon, index) => {
-              return (
-                <Link
-                  href={icon.path}
-                  key={index}
-                  target="_blank"
-                  className="relative w-[30px] h-[30px]"
-                >
-                  <Image src={icon.src} fill alt="" />
-                </Link>
-              );
-            })}
-          </div>
+           {/* socials */}
+            <div className="mb-[72px] flex gap-8 mx-auto">
+              {/* 3. RENDERIZAÇÃO AJUSTADA */}
+              {socials.map((social, index) => {
+                const Icon = social.icon; // Pega o componente do objeto
+                return (
+                  <Link
+                    href={social.path}
+                    key={index}
+                    target="_blank"
+                    // Os ícones já têm cor, mas podemos adicionar um hover effect
+                    className="text-white hover:text-secondary transition-all"
+                  >
+                    {/* Renderiza o componente e passa o tamanho via prop */}
+                    <Icon size={30} /> 
+                  </Link>
+                );
+              })}
+            </div>
         </div>
       </div>
       {/* copyright */}
