@@ -17,6 +17,9 @@ const EventType = () => {
 
   const uniqueTypes = [
     "Todos os tipos",
+    "Terrestre",
+    "Aquática",
+    "Aérea",
     ...new Set(events.map((event) => event.type)),
   ];
 

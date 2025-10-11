@@ -10,10 +10,10 @@ const Hero = () => {
       {/* BG com gradiente sobre imagem */}
       <div className="absolute inset-0 -z-10">
         <div
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          className="w-full h-full bg-cover bg-center opacity-90 bg-no-repeat"
           style={{
-            backgroundImage: "url(/assets/hero/hero.jpg)", // ou sua imagem
-            backgroundSize: "cover",
+            backgroundImage: "url(/assets/hero/fmarcelo.png)", // ou sua imagem
+            backgroundSize: "cover",  
             backgroundPosition: "center",
             backgroundAttachment: "fixed", // efeito parallax
           }}
