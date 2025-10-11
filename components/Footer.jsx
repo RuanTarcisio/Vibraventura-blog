@@ -73,7 +73,7 @@ const Footer = () => {
               value={form.nome}
               onChange={handleChange}
               required
-              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
+              className="px-8 w-full h-[60px] rounded-xl outline-none placeholder:text-gray/80 text-black text-sm"
             />
             <input
               name="email"
@@ -82,7 +82,7 @@ const Footer = () => {
               value={form.email}
               onChange={handleChange}
               required
-              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
+              className="px-8 w-full h-[60px] rounded-xl outline-none placeholder:text-gray/80 text-black text-sm"
             />
             <input
               name="telefone"
@@ -90,7 +90,7 @@ const Footer = () => {
               placeholder="Seu telefone (opcional)"
               value={form.telefone}
               onChange={handleChange}
-              className="px-8 w-full h-[60px] rounded-full outline-none placeholder:text-gray/80 text-black text-sm"
+              className="px-8 w-full h-[60px] rounded-xl outline-none placeholder:text-gray/80 text-black text-sm"
             />
             <textarea
               name="mensagem"

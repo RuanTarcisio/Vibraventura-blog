@@ -8,7 +8,7 @@ const EventSearch = () => {
   const { searchTerm, setSearchTerm } = useContext(EventContext);
 
   return (
-    <div className="flex items-center gap-[10px] w-full xl:w-[190px]">
+    <div className="flex items-center gap-[10px] w-full text-white xl:w-[190px]">
       <div className="text-lg text-accent">
         <BiSearch />
       </div>
@@ -17,7 +17,7 @@ const EventSearch = () => {
         type="text"
         placeholder="Nome da aventura"
         onChange={(e)=> setSearchTerm(e.target.value)}
-        className="w-full p-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+        className="w-full p-1 border-0 text-white placeholder:text-gray focus-visible:ring-0 focus-visible:ring-offset-0"
       />
     </div>
   );
