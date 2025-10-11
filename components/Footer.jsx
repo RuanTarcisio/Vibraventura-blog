@@ -58,12 +58,12 @@ const Footer = () => {
       <div className="container mx-auto border-b border-white/40">
         {/* text & input form & socials */}
         <div className="flex flex-col max-w-[550px] mx-auto text-center">
-          {/* text */}
+          {/* Texto */}
           <div className="mb-9">
             <h2 className="h2 mb-3">Vibre conosco nessa<br/> aventura</h2>
             <p>Junte-se à nossa lista para atualizações exclusivas.</p>
           </div>
-          {/* form */}
+          {/* Formulário */}
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 mb-8">
             <input
               name="nome"
