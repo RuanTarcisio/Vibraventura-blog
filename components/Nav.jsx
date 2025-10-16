@@ -16,7 +16,7 @@ const Nav = () => {
           <Link
             href={link.path}
             key={index}
-            className={`${link.path === pathname && "text-accent"}`}
+            className={`${link.path === pathname && "text-accent"} font-medium`}
           >
             {link.name}
           </Link>

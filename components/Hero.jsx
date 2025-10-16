@@ -3,53 +3,46 @@ import Searchbar from "./SearchBar/Searchbar";
 import { EventContext } from "@/contexts/EventContext";
 
 const Hero = () => {
-  const { handleClearSearch } = useContext(EventContext);
+  
 
   return (
-    <section className="relative flex flex-col justify-center items-center min-h-[90vh] xl:min-h-[800px] py-20 px-4 text-center overflow-hidden">
-      {/* BG com gradiente sobre imagem */}
+    <section
+      className="relative flex flex-col justify-center items-center min-h-[90vh] xl:min-h-[800px] py-20 px-4 text-center overflow-hidden"
+      aria-label="Seção principal - Vibraventura"
+    >
+      {/* Background otimizado com overlay gradiente */}
       <div className="absolute inset-0 -z-10">
         <div
-          className="w-full h-full bg-cover bg-center opacity-90 bg-no-repeat"
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/assets/hero/fmarcelo.png)", // ou sua imagem
-            backgroundSize: "cover",  
+            backgroundImage: "url(/assets/hero/fmarcelo.png)",
+            backgroundSize: "cover",
             backgroundPosition: "center",
-            backgroundAttachment: "fixed", // efeito parallax
+            backgroundAttachment: "fixed",
           }}
         />
-        
+        {/* Overlay gradiente para melhor legibilidade */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
       </div>
 
-      {/* Conteúdo */}
-      <div className="container mx-auto flex flex-col items-center justify-center gap-6 max-w-[680px] relative z-10">
-        <div className="flex flex-col gap-2">
-          <div className="pretitle mt-14 text-accent">Viva novas emoções</div>
-          <h1 className="h1 leading-tight text-white">
-            Conecte-se com a natureza <br /> e viva a aventura
+      {/* Conteúdo principal com animações */}
+      <div className="container mx-auto flex flex-col items-center justify-center gap-8 max-w-[680px] relative z-10">
+        {/* Header com hierarquia melhorada */}
+        <header className="flex flex-col gap-4 animate-fade-in-up">
+          <div className="pretitle mt-14 text-accent font-semibold tracking-wider">
+            Viva novas emoções
+          </div>
+          <h1 className="h1 leading-tight text-white font-bold">
+            Conecte-se com a <span className="text-accent">natureza</span>
+            <br />
+            e viva a <span className="text-accent">aventura</span>
           </h1>
-          <p className="text-sm md:text-base xl:text-lg font-light text-white font-bold mb-4 xl:mb-10 max-w-[480px] mx-auto">
+          <p className="text-base md:text-lg xl:text-xl font-light text-white/90 mb-4 xl:mb-10 max-w-[480px] mx-auto leading-relaxed">
             O Vibraventura conecta pessoas a experiências únicas de turismo e esportes
             radicais. Descubra lugares incríveis, explore seu limite e compartilhe
             momentos que fazem o coração vibrar.
           </p>
-        </div>
-
-        {/* Search */}
-        <div className="w-full flex flex-col z items-center gap-3">
-          <Searchbar />
-          <div className="w-full flex flex-col xl:flex-row justify-center xl:justify-between items-center">
-            <p className="text-xs md:text-sm italic font-light text-white text-center">
-              Explore por atividade, local ou categoria — ou veja todas as experiências.
-            </p>
-            <button
-              onClick={handleClearSearch}
-              className="text-accent text-sm mt-2 xl:mt-0 hover:underline transition-all"
-            > 
-              Limpar busca
-            </button>
-          </div>
-        </div>
+        </header>
       </div>
     </section>
   );

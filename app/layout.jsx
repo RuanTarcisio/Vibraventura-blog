@@ -10,9 +10,13 @@ import Footer from "@/components/Footer";
 import CartProvider from "@/components/CartProvider";
 import { Toaster } from "@/components/ui/toaster";
 
+
 export const metadata = {
-  title: "Events App",
-  description: "A Site for ecoturimo events",
+  title: "Vibraventura - Ecoturismo e Esportes Radicais",
+  description: "Conecte-se com a natureza e viva a aventura com o Vibraventura. Descubra experiências únicas de turismo e esportes radicais.",
+  icons: {
+    icon: "/assets/header/logo2.png",
+  },
 };
 
 const poppins = Poppins({
