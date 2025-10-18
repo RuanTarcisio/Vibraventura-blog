@@ -1,7 +1,9 @@
-export default async function Page({ params }) {
-    console.log(params);
+// import { getAventura } from "@/services/aventuraService";
 
-    // const aventura = await getAventura(params.id);
-    return <div className="h-[90vh]">Aventura</div>;
-    // return <AventuraDetalhes aventura={aventura} />;
+export default async function Page({ params }) {
+    // const aventura = await getAventura(params.id); // SSR
+    
+    // return <AventuraDetalhes aventura={aventura} ]/>;
+
+    return <div></div>
 }
