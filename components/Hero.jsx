@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative flex flex-col justify-center items-center min-h-[90vh] xl:min-h-[800px] py-20 px-4 text-center overflow-hidden"
+      className="relative flex flex-col justify-center items-center min-h-[90vh] xl:min-h-[800px] py-10 px-4 text-center overflow-hidden"
       aria-label="Seção principal - Vibraventura"
     >
       {/* Background otimizado com overlay gradiente */}
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col items-center justify-center gap-8 max-w-[680px] relative z-10">
         {/* Header com hierarquia melhorada */}
         <header className="flex flex-col gap-4 animate-fade-in-up">
-          <div className="pretitle mt-14 text-accent font-semibold tracking-wider">
+          <div className="pretitle mt-14 md:-mt-4 text-accent font-semibold tracking-wider">
             Viva novas emoções
           </div>
           <h1 className="h1 leading-tight text-white font-bold">

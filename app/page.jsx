@@ -15,7 +15,7 @@ const Home = () => {
   const { showEventList, handleClearSearch } = useContext(EventContext);
 
   return (
-    <div>
+    <div className="h-[80vh]">
       <ScrollIndicator />
       <Hero />
       <div className="flex flex-col justify-center items-center"></div>

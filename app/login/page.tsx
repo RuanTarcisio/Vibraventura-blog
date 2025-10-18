@@ -16,11 +16,11 @@ const LoginPage = () => {
 
   const redirect = searchParams.get("redirect") || "/";
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      router.push(redirect);
-    }
-  }, [isAuthenticated, router, redirect]);
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     router.push(redirect);
+  //   }
+  // }, [isAuthenticated, router, redirect]);
 
   const handleLogin = async (values: { email: string; password: string }) => {
     setLoading(true);
