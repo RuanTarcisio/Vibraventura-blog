@@ -25,6 +25,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/ui/input.jsx"  ],
   "exclude": ["node_modules"]
 }
