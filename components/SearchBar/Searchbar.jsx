@@ -2,76 +2,51 @@
 
 import React, { useContext } from "react";
 import { EventContext } from "@/contexts/EventContext";
-import EventSearch from "./EventSearch";
-import EventLocation from "./EventLocation";
-import EventDate from "./EventDate";
-import EventType from "./EventType";
-import { BiRightArrowAlt } from "react-icons/bi";
+import { BiSearch, BiRightArrowAlt } from "react-icons/bi";
 
 const Searchbar = () => {
-  const { handleSubmit } = useContext(EventContext);
+  const { searchTerm, setSearchTerm, handleSubmit } = useContext(EventContext);
 
   return (
     <div
       className="
-        w-full max-w-3xl mx-auto
-        bg-white/5 backdrop-blur-xl rounded-2xl lg:rounded-full 
-        border border-white/10
-        flex flex-col sm:flex-row items-stretch sm:items-center gap-3 p-4 sm:p-3 lg:p-2
-        transition-all duration-300 shadow-lg
+        w-full bg-white/10 backdrop-blur-md border border-white/10
+        rounded-full shadow-lg flex items-center
+        px-3 sm:px-4 py-[6px] sm:py-2
+        transition-all duration-300
       "
     >
-      {/* Campo principal */}
-      <div className="flex-1 min-w-0">
-        <EventSearch />
-      </div>
+      {/* Ícone de busca */}
+      <BiSearch className="text-lg sm:text-xl text-accent flex-shrink-0 mr-2" />
 
-      {/* Filtros responsivos */}
-      <div
+      {/* Campo de texto */}
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="Buscar aventuras..."
         className="
-          flex flex-col sm:flex-row items-stretch sm:items-center 
-          gap-3 sm:gap-2 lg:gap-1 flex-wrap justify-center sm:justify-end
+          bg-transparent w-full text-sm sm:text-base text-white 
+          placeholder:text-gray-300 border-0 outline-none focus:ring-0
         "
+      />
+
+      {/* Botão de envio */}
+      <button
+        onClick={handleSubmit}
+        className="
+          flex items-center justify-center
+          bg-accent hover:bg-accent-hover 
+          text-white rounded-full
+          ml-2 sm:ml-3 
+          p-2 sm:p-2.5
+          focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black
+          transition-all duration-300
+        "
+        aria-label="Buscar aventuras"
       >
-        {/* Filtros secundários - ocultos em mobile */}
-        <div className="hidden sm:flex items-center gap-2 lg:gap-1 flex-wrap">
-          <div className="hidden lg:block h-6 border-r border-white/10"></div>
-          <div className="min-w-[110px] lg:min-w-[100px]">
-            <EventLocation />
-          </div>
-          <div className="hidden lg:block h-6 border-r border-white/10"></div>
-          <div className="min-w-[110px] lg:min-w-[100px]">
-            <EventDate />
-          </div>
-          <div className="hidden lg:block h-6 border-r border-white/10"></div>
-          <div className="min-w-[110px] lg:min-w-[100px]">
-            <EventType />
-          </div>
-        </div>
-
-        {/* Botão de busca */}
-        <button
-          onClick={handleSubmit}
-          className="
-            w-full sm:w-12 h-12 lg:h-11 
-            rounded-xl lg:rounded-full 
-            bg-accent hover:bg-accent-hover 
-            transition-all flex items-center justify-center flex-shrink-0
-            shadow-md hover:shadow-lg
-            focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-gray-900
-          "
-          aria-label="Buscar eventos"
-        >
-          <BiRightArrowAlt className="text-xl lg:text-2xl" />
-        </button>
-      </div>
-
-      {/* Versão mobile ultra compacta */}
-      <div className="sm:hidden flex flex-col gap-2 mt-2">
-        <div className="text-xs text-white/60 text-center">
-          Toque nos filtros para mais opções
-        </div>
-      </div>
+        <BiRightArrowAlt className="text-lg sm:text-xl" />
+      </button>
     </div>
   );
 };
