@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /*async rewrites() {
+  images: {
+    domains: [
+      'cdn.cosmicjs.com',
+      'imgix.cosmicjs.com'
+    ],
+    formats: ['image/avif', 'image/webp'],
+  },
+  async rewrites() {
     return {
       beforeFiles: [
         {
@@ -9,6 +16,7 @@ const nextConfig = {
         }
       ]
     }
-  }*/
+  }
 }
+
 export default nextConfig

@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col items-center justify-center gap-8 max-w-[680px] relative z-10">
         {/* Header com hierarquia melhorada */}
         <header className="flex flex-col gap-4 animate-fade-in-up">
-          <div className="pretitle mt-14 md:-mt-4 text-accent font-semibold tracking-wider">
+          <div className="pretitle -mt-48 md:-mt-40 text-accent font-semibold tracking-wider">
             Viva novas emoções
           </div>
           <h1 className="h1 leading-tight text-white font-bold">
@@ -37,11 +37,11 @@ const Hero = () => {
             <br />
             e viva a <span className="text-accent">aventura</span>
           </h1>
-          <p className="text-base md:text-lg xl:text-xl font-light text-white/90 mb-4 xl:mb-10 max-w-[480px] mx-auto leading-relaxed">
+          {/* <p className="text-base md:text-lg xl:text-xl font-light text-white/90 mb-4 xl:mb-10 max-w-[480px] mx-auto leading-relaxed">
             O Vibraventura conecta pessoas a experiências únicas de turismo e esportes
             radicais. Descubra lugares incríveis, explore seu limite e compartilhe
             momentos que fazem o coração vibrar.
-          </p>
+          </p> */}
         </header>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { RegisterFormValues, registerFormSchema } from "@/app/register/registerFormSchema";
+import { RegisterFormValues, registerFormSchema } from "@/app/auth/cadastrar/registerFormSchema";
 import { CustomDatePicker } from "@/components/DatePicker";
 import { ChangeEvent, useEffect, useState } from "react";
 import Image from "next/image";

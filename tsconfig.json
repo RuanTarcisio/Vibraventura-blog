@@ -17,14 +17,14 @@
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
-}
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/ui/input.jsx"  ],
+  ],
   "exclude": ["node_modules"]
 }

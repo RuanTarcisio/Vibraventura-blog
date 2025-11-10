@@ -1,166 +1,132 @@
 // src/contexts/useAuthStore.ts
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, subscribeWithSelector } from "zustand/middleware";
+import { toast } from "sonner"; // Para erros automáticos
 
-interface Role {
-  authority: string;
-}
-
-interface User {
-  id: number;
-  email: string;
-  name: string;
-  roles?: Role[];
-  profileImage: string;
-}
+interface Role { authority: string; }
+interface User { id: number; name: string; profileImage: string; } // ← Sem email/roles no storage!
 
 interface AuthState {
   isAuthenticated: boolean;
   loading: boolean;
   user: User | null;
-  lastChecked: number;
-  checkSession: (force?: boolean) => Promise<boolean>;
+  checkSession: () => Promise<boolean>;
   login: (email: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
-  register: (userData: FormData) => Promise<void>;
-  redirectToSocialLogin: (provider: "google" | "github") => void;
   getUserId: () => number | null;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/v1";
-let _pendingCheckSession: Promise<boolean> | null = null;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://api.vibraventura.com/v1";
 
 export const useAuthStore = create<AuthState>()(
   persist(
-    (set, get) => ({
-      isAuthenticated: false,
-      loading: false, // ← Inicialmente false
-      user: null,
-      lastChecked: 0,
+    subscribeWithSelector( // ← Auto-debounce + reactivity
+      (set, get) => ({
+        isAuthenticated: false,
+        loading: true, // ← ✅ Inicial true = zero flash!
+        user: null,
 
-      register: async (formData) => {
-        try {
-          const res = await fetch(`${API_URL}/auth/signup`, {
-            method: "POST",
-            credentials: "include",
-            body: formData,
-          });
-          if (!res.ok) throw new Error("Falha ao registrar");
-          await get().checkSession(true);
-        } catch (err) {
-          console.error("Registration error:", err);
-          throw err;
-        }
-      },
+        // src/contexts/useAuthStore.ts
+        checkSession: async () => {
+          const prevState = get();               // <-- guarda o estado anterior
+          set({ loading: true });
 
-      login: async (email, password) => {
-        try {
-          const res = await fetch(`${API_URL}/auth/signin`, {
+          try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 8_000); // 8s timeout
+
+            const res = await fetch(`${API_URL}/users/check-session`, {
+              credentials: "include",
+              signal: controller.signal,
+            });
+
+            clearTimeout(timeoutId);
+
+            if (res.ok) {
+              const { id, name, profileImage } = await res.json();
+              set({
+                isAuthenticated: true,
+                user: { id, name, profileImage },
+                loading: false,
+              });
+              return true;
+            } else {
+              // 401, 403, 500 → sessão inválida
+              set({
+                isAuthenticated: false,
+                user: null,
+                loading: false,
+              });
+              toast.error("Sessão expirada");
+              return false;
+            }
+          } catch (err: any) {
+            // ---- ERRO DE REDE (backend off, timeout, CORS) ----
+            const isNetworkError =
+              !navigator.onLine ||
+              err.name === "TypeError" ||          // Failed to fetch
+              err.name === "AbortError";           // timeout
+
+            console.warn("checkSession – erro de rede:", err);
+
+            // Não alteramos isAuthenticated se for só falha de rede
+            set({
+              loading: false,
+              // mantemos o estado anterior (pode ser true ou false)
+              ...prevState,
+            });
+
+            if (isNetworkError) {
+              toast.error("Sem conexão com o servidor");
+            } else {
+              toast.error("Erro inesperado ao verificar sessão");
+            }
+            return false;
+          }
+        },
+
+        login: async (email, password) => {
+          const res = await fetch(`${API_URL}/auth/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
             body: JSON.stringify({ email, password }),
           });
-          if (!res.ok) throw new Error("Falha no login");
-          await get().checkSession(true);
-        } catch (err) {
-          console.error("Login error:", err);
-          throw err;
-        }
-      },
 
-      redirectToSocialLogin: (provider) => {
-        if (typeof window !== "undefined") {
-          window.location.href = `${API_URL}/oauth2/authorization/${provider}`;
-        }
-      },
-
-      logout: async () => {
-        try {
-          await fetch(`${API_URL}/auth/logout`, {
-            method: "POST",
-            credentials: "include",
-          });
-        } catch (err) {
-          console.error("Logout error:", err);
-        } finally {
-          const userId = get().user?.id;
-          if (userId) localStorage.removeItem(`profileImage_${userId}`);
-          set({
-            isAuthenticated: false,
-            user: null,
-            loading: false, // ← Garante que loading seja false
-            lastChecked: Date.now(),
-          });
-        }
-      },
-
-      checkSession: async (force = false) => {
-        const cacheTTL = 60_000;
-        const now = Date.now();
-        const last = get().lastChecked;
-
-        // Retorna se já está verificando
-        if (_pendingCheckSession) return _pendingCheckSession;
-
-        // Retorna cache se ainda é válido
-        if (!force && now - last < cacheTTL) {
-          return get().isAuthenticated;
-        }
-
-        _pendingCheckSession = (async () => {
-          set({ loading: true }); // ← Inicia loading
-          
-          try {
-            const res = await fetch(`${API_URL}/users/check-session`, {
-              credentials: "include",
-            });
-
-            if (res.ok) {
-              const { id, email, name, roles, profileImage } = await res.json();
-              set({
-                isAuthenticated: true,
-                user: { id, email, name, roles, profileImage },
-                loading: false, // ← Para loading com sucesso
-                lastChecked: Date.now(),
-              });
-              return true;
-            } else {
-              set({
-                isAuthenticated: false,
-                user: null,
-                loading: false, // ← Para loading com erro
-                lastChecked: Date.now(),
-              });
-              return false;
-            }
-          } catch (err) {
-            console.error("Erro ao verificar sessão:", err);
-            set({
-              isAuthenticated: false,
-              user: null,
-              loading: false, // ← Para loading com erro
-              lastChecked: Date.now(),
-            });
-            return false;
-          } finally {
-            _pendingCheckSession = null;
+          if (!res.ok) {
+            toast.error("Credenciais inválidas"); // ← Backend 401!
+            throw new Error("Falha no login");
           }
-        })();
 
-        return _pendingCheckSession;
-      },
+          await get().checkSession(); // ✅ Auto-atualiza store
+        },
 
-      getUserId: () => get().user?.id || null,
-    }),
+        logout: async () => {
+          try {
+            await fetch(`${API_URL}/auth/logout`, { 
+              method: "POST", 
+              credentials: "include" 
+            });
+          } finally {
+            const userId = get().user?.id;
+            if (userId) localStorage.removeItem(`profileImage_${userId}`);
+            set({ isAuthenticated: false, user: null, loading: false });
+          }
+        },
+
+        getUserId: () => get().user?.id || null,
+      })
+    ),
     {
       name: "auth-storage",
-      partialize: (state) => ({
+      partialize: (state) => ({ // ← ✅ Sem dados sensíveis!
         isAuthenticated: state.isAuthenticated,
-        user: state.user,
-        lastChecked: state.lastChecked,
+        user: state.user ? { 
+          id: state.user.id, 
+          name: state.user.name, 
+          profileImage: state.user.profileImage 
+        } : null,
       }),
-      // Não persiste o estado loading!
     }
   )
 );
