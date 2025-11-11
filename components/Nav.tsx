@@ -11,7 +11,7 @@ interface NavProps {
 
 const links = [
   { path: "/", name: "Início", icon: "🏠" },
-  { path: "/blog", name: "Blog", icon: "📝" },
+  // { path: "/blog", name: "Blog", icon: "📝" },
   { path: "/sobre", name: "Sobre", icon: "ℹ️" },
   { path: "/contato", name: "Contato", icon: "📧" },
 ];
@@ -40,7 +40,7 @@ const Nav = ({ mobile = false, onLinkClick }: NavProps) => {
                   font-primary font-medium text-base
                   transition-all duration-300
                   ${isActive
-                    ? 'bg-gradient-to-r from-accent to-accent-hover text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-accent to-accent-hover text-black shadow-lg'
                     : 'text-secondary hover:bg-grey/5 hover:text-accent'
                   }
                 `}
@@ -83,7 +83,7 @@ const Nav = ({ mobile = false, onLinkClick }: NavProps) => {
                 transition-all duration-300
                 ${isActive
                   ? 'text-accent'
-                  : 'text-white/90 hover:text-white'
+                  : 'text-black/90 hover:text-grey'
                 }
               `}
             >
