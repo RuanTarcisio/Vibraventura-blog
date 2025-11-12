@@ -1,54 +1,3 @@
-// // components/FeaturedPost.jsx
-// "use client";
-
-// import Link from "next/link";
-// import CategoryBadge from "./CategoryBadge";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-
-// export default function FeaturedPost({ post }: { post: any }) {
-//     const metadata = post.metadata || {};
-
-//     return (
-//         <motion.div
-//             initial={{ opacity: 0, y: 30 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100"
-//         >
-//             <div className="md:flex">
-//                 <div className="md:flex-1 relative h-64 md:h-auto">
-//                     <Image
-//                         src={metadata.imagem_base?.url || "/images/fallback.png"}
-//                         alt={metadata.titulo || post.title}
-//                         fill
-//                         className="object-cover"
-//                     />
-//                 </div>
-
-//                 <div className="md:flex-1 p-8">
-//                     <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
-
-//                     <h2 className="text-3xl font-bold mt-4 mb-4 hover:text-green-600 transition">
-//                         <Link href={`/${post.slug}`}>
-//                             {metadata.titulo || post.title}
-//                         </Link>
-//                     </h2>
-
-//                     <div
-//                         className="text-gray-600 text-lg mb-4 line-clamp-3"
-//                         dangerouslySetInnerHTML={{ __html: metadata.descricao || "Descrição em breve..." }}
-//                     />
-
-//                     <div className="flex items-center justify-between text-sm text-gray-500">
-//                         <span>Por {metadata.autor || "Equipe Vibraventura"}</span>
-//                         <span>{new Date(metadata.publicada_em).toLocaleDateString('pt-BR')}</span>
-//                     </div>
-//                 </div>
-//             </div>
-//         </motion.div>
-//     );
-// }
-
 'use client';
 
 import Link from "next/link";
@@ -83,7 +32,7 @@ export default function FeaturedPost({ post }: { post: any }) {
             className="relative group"
         >
             {/* Container principal */}
-            <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-transparent hover:border-accent/20 transition-all duration-500">
+            <div className="mt-20 relative bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-transparent hover:border-accent/20 transition-all duration-500">
 
                 {/* Gradiente de borda animado */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${config.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 pointer-events-none`} />
@@ -164,7 +113,7 @@ export default function FeaturedPost({ post }: { post: any }) {
                         </motion.div>
 
                         {/* Título */}
-                        <Link href={`/${post.slug}`}>
+                        <Link href={`/post/${post.slug}`}>
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -228,7 +177,7 @@ export default function FeaturedPost({ post }: { post: any }) {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
                         >
-                            <Link href={`/${post.slug}`}>
+                            <Link href={`/post/${post.slug}`}>
                                 <motion.button
                                     whileHover={{ scale: 1.05, x: 5 }}
                                     whileTap={{ scale: 0.95 }}

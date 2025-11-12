@@ -158,9 +158,10 @@ export default async function PostPage({
     ]);
 
     // Verifica se o post existe
+    <div className=""></div>
     if (!post) {
         return (
-            <div className="max-w-4xl mx-auto px-6 py-20 text-center">
+            <div className="max-w-4xl mx-auto px-6 py-20 text-center mt-20 h-[vh-80]">
                 <h1 className="text-2xl font-bold text-secondary font-primary">
                     Post não encontrado
                 </h1>

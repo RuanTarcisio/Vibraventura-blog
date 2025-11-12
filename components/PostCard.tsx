@@ -65,6 +65,7 @@ export default function PostCard({ post, index = 0 }: { post: any; index?: numbe
             </motion.div>
 
             <div className="relative z-10">
+                <Link href={`/post/${post.slug}`}>
                 {/* Imagem com parallax */}
                 <div className="relative w-full aspect-[16/9] overflow-hidden rounded-t-2xl">
                     <motion.div
@@ -130,14 +131,13 @@ export default function PostCard({ post, index = 0 }: { post: any; index?: numbe
                     </div>
 
                     {/* Título */}
-                    <Link href={`/${post.slug}`}>
+                    
                         <motion.h3
                             className="text-xl font-primary font-bold text-secondary line-clamp-2 group-hover:text-accent transition-colors duration-300"
                             style={{ transformStyle: "preserve-3d", transform: "translateZ(20px)" }}
                         >
                             {metadata.titulo || post.title}
                         </motion.h3>
-                    </Link>
 
                     {/* Descrição */}
                     <div
@@ -172,7 +172,9 @@ export default function PostCard({ post, index = 0 }: { post: any; index?: numbe
                         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                         style={{ originX: 0 }}
                     />
-                </div>
+                    </div>
+                </Link>
+
             </div>
 
             {/* Efeito de brilho no canto */}
@@ -190,96 +192,3 @@ export default function PostCard({ post, index = 0 }: { post: any; index?: numbe
         </motion.div>
     );
 }
-
-// // components/PostCard.jsx
-// "use client";
-
-// import Link from "next/link";
-// import CategoryBadge from "./CategoryBadge";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-
-// export default function PostCard({ post }: { post: any }) {
-//     const metadata = post.metadata || {};
-
-//     return (
-//         <motion.div
-//             whileHover={{ y: -5 }}
-//             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all border border-gray-100"
-//         >
-//             <div className="relative w-full aspect-[16/9] rounded-t-xl overflow-hidden">
-//                 <Image
-//                     src={metadata.imagem_base?.url || "/images/fallback.png"}
-//                     alt={metadata.titulo || post.title}
-//                     fill
-//                     className="object-cover object-center"
-//                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-//                 />
-//                 <div className="absolute top-3 left-3">
-//                     <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
-//                 </div>
-//             </div>
-
-//             <div className="p-5">
-//                 <div className="flex items-center justify-between text-sm text-gray-500 mb-2">
-//                     <span>{metadata.autor || "Equipe Vibraventura"}</span>
-//                     <span>{new Date(metadata.publicada_em).toLocaleDateString('pt-BR')}</span>
-//                 </div>
-
-//                 <h3 className="text-lg font-bold mb-2 line-clamp-2 hover:text-green-600 transition">
-//                     <Link href={`/${post.slug}`}>
-//                         {metadata.titulo || post.title}
-//                     </Link>
-//                 </h3>
-
-//                 <div
-//                     className="text-gray-600 text-sm line-clamp-3 mb-3"
-//                     dangerouslySetInnerHTML={{
-//                         __html: metadata.descricao?.substring(0, 120) + '...' || "Descrição em breve..."
-//                     }}
-//                 />
-
-//                 {metadata.tags && (
-//                     <div className="flex flex-wrap gap-1 mt-3">
-//                         {metadata.tags.split(',').slice(0, 2).map((tag: string) => (
-//                             <span key={tag.trim()} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
-//                                 #{tag.trim()}
-//                             </span>
-//                         ))}
-//                     </div>
-//                 )}
-//             </div>
-//         </motion.div>
-//     );
-// }
-
-
-
-// import Image from 'next/image';
-// import Link from 'next/link';
-
-// export default function PostCard({ post }: { post: any }) {
-//     return (
-//         <Link href={`/${post.slug}`} className="group block">
-//             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-//                 <div className="relative h-48">
-//                     <Image
-//                         src={post.imagem || '/placeholder.jpg'}
-//                         alt={post.titulo}
-//                         fill
-//                         className="object-cover group-hover:scale-105 transition"
-//                     />
-//                 </div>
-//                 <div className="p-6">
-//                     <h2 className="text-2xl font-bold text-gray-800 group-hover:text-green-600">
-//                         {post.titulo}
-//                     </h2>
-//                     <p className="text-gray-600 mt-2 line-clamp-2">{post.resumo}</p>
-//                     <time className="text-sm text-gray-500 mt-4 block">
-//                         {new Date(post.data).toLocaleDateString('pt-BR')}
-//                     </time>
-//                 </div>
-//             </article>
-//         </Link>
-//     );
-// }

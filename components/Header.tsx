@@ -49,7 +49,7 @@ const Header = () => {
                 alt="Vibraventura"
                 width={60}
                 height={60}
-                className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 transition-all"
+                className="w-12 h-12 sm:w-14 sm:h-14 lg:w-20 lg:h-20 transition-all"
                 priority
               />
 
@@ -63,7 +63,7 @@ const Header = () => {
             <Nav />
 
             {/* Link do Blog com destaque */}
-            <Link href="/blog">
+            <Link href="https://vibraventura.com.br" rel="noopener noreferrer">
               <motion.div
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -90,7 +90,7 @@ const Header = () => {
                   }}
                 />
 
-                <span className="relative flex items-center gap-2">📝 Blog</span>
+                <span className="relative flex items-center gap-2">🌏 Sua Próxima Aventura</span>
               </motion.div>
             </Link>
           </div>
