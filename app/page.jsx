@@ -1,85 +1,3 @@
-// import { getBlogPosts } from "./lib/cosmic";
-// import FeaturedPost from "@/components/FeaturedPost";
-// import PostCard from "@/components/PostCard";
-// import EmptyState from "@/components/EmptyState";
-
-// export default async function HomePage() {
-//     console.log('🏠 HomePage carregando...');
-
-//     let posts = [];
-
-//     try {
-//         posts = await getBlogPosts();
-//     } catch (error) {
-//         console.error('Erro na HomePage:', error);
-//     }
-
-//     // Debug: ver que posts temos
-//     console.log('📝 Posts recebidos:', posts.length);
-//     posts.forEach(post => {
-//         console.log('Post:', {
-//             slug: post.slug,
-//             title: post.title,
-//             metadata: post.metadata
-//         });
-//     });
-
-//     if (posts.length === 0) {
-//         return <EmptyState />;
-//     }
-
-//     const featured = posts.find(post => post.metadata?.destaque === true);
-//     const others = posts.filter(post => post.metadata?.destaque !== true);
-
-//     return (
-//         <main className="max-w-6xl mx-auto px-6 py-10">
-//             <h1 className="text-4xl font-bold text-center mb-12">Blog Vibraventura</h1>
-
-//             {featured && <FeaturedPost post={featured} />}
-
-//             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-//                 {others.map((post) => (
-//                     <PostCard key={post.slug} post={post} />
-//                 ))}
-//             </div>
-//         </main>
-//     );
-// }
-
-
-// // // components
-// // import Hero from "@/components/Hero";
-// // import UpcomingEvents from "@/components/UpcomingEvents";
-// // import RecommendedEvents from "@/components/RecommendedEvents";
-// // import DownloadApp from "@/components/DownloadApp";
-// // import ScrollIndicator from "@/components/ScrollIndicator";
-
-// // const Home = () => {
-
-// //   return (
-// //     <div className="h-full">
-// //       <ScrollIndicator />
-// //       <Hero />
-// //       <div className="flex flex-col justify-center items-center"></div>
-     
-// //         <div>
-// //           <div className="container mx-auto">
-// //             {/* upcoming events slider */}
-// //             <UpcomingEvents />
-// //             {/* download app section */}
-// //             {/* <DownloadApp /> */}
-// //             {/* recomended events slider*/}
-// //             {/* <RecommendedEvents /> */}
-// //           </div>
-// //         </div>
-// //       )
-// //     </div>
-// //   );
-// // };
-
-// // export default Home;
-
-
 import { getBlogPosts } from "./lib/cosmic";
 import FeaturedCarousel from "@/components/FeaturedCarousel";
 import PostCard from "@/components/PostCard";
@@ -132,24 +50,24 @@ export default async function HomePage() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                         </span>
-                        Blog Oficial
+                        Blog
                     </div>
 
                     {/* Título */}
-                    <h1 className="text-5xl md:text-7xl font-primary font-bold text-white mb-6 leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-primary font-bold mb-6 leading-tight bg-gradient-to-r from-orange-burned via-amber-500 to-yellow-golden bg-clip-text text-transparent">
                         Vibraventura
                         <span className="block text-3xl md:text-5xl mt-2 bg-gradient-to-r from-white via-sky to-white bg-clip-text text-transparent">
-                            Histórias de Aventura
+                            Muito Mais Que Aventuras!
                         </span>
                     </h1>
 
                     {/* Subtítulo */}
-                    <p className="text-lg md:text-xl text-white/90 font-primary max-w-2xl mx-auto mb-8 leading-relaxed">
+                    <p className="text-lg md:text-xl text-white/90 font-primary max-w-2xl mx-auto mb-16 leading-relaxed">
                         Explore destinos incríveis, descubra experiências únicas e inspire-se para sua próxima aventura! 🌍
                     </p>
 
                     {/* Estatísticas */}
-                    <div className="flex flex-wrap justify-center gap-8 text-black">
+                    {/* <div className="flex flex-wrap justify-center gap-8 text-black">
                         <div className="text-center">
                             <div className="text-3xl font-bold font-secondary">{posts.length}+</div>
                             <div className="text-sm font-primary opacity-80">Aventuras</div>
@@ -166,7 +84,7 @@ export default async function HomePage() {
                             <div className="text-3xl font-bold font-secondary">∞</div>
                             <div className="text-sm font-primary opacity-80">Inspiração</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Ondas decorativas */}
@@ -184,9 +102,8 @@ export default async function HomePage() {
                     <section className="mb-20">
                         <div className="text-center mb-8">
                             <h2 className="text-4xl font-primary font-bold text-secondary mb-3 inline-flex items-center gap-3">
-                                <span className="text-3xl">⭐</span>
-                                Aventuras em Destaque
-                                <span className="text-3xl">⭐</span>
+                                
+                                Publicações em Destaque
                             </h2>
                             <p className="text-grey font-primary text-lg mt-2">
                                 As experiências mais incríveis selecionadas para você

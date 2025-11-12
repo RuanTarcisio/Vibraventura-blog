@@ -44,6 +44,15 @@ export default {
         earth: "#8B4513", // Marrom terra
         sky: "#87CEEB", // Azul céu
         adventureOrange: "#FF4500", 
+        'orange-burned': '#D97706',
+        'yellow-golden': '#F59E0B',
+        'vibra-orange': '#D97706',
+        'vibra-yellow': '#F59E0B',
+        'vibra-turquesa': '#0D9488',
+        'vibra-forest': '#1A3C34',
+        'vibra-forest-light': '#2D5A4A',
+        'vibra-bg': '#0F1A17',
+        'vibra-text': '#F0FDF4',
         grey: "#737373", 
       },
       backgroundImage: {

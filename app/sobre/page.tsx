@@ -171,7 +171,7 @@ export default function SobrePage() {
       </section>
 
       {/* Estatísticas */}
-      <section className="py-16 lg:py-24 bg-grey/5">
+      {/* <section className="py-16 lg:py-24 bg-grey/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -209,7 +209,7 @@ export default function SobrePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Nossos Valores */}
       <section className="py-16 lg:py-24">
