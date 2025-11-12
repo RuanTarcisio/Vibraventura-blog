@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
 
           {/* Coluna 3: Explore */}
-          <div>
+          {/* <div>
             <h3 className="text-vibra-text font-bold text-lg mb-6 bg-gradient-to-r from-vibra-turquesa to-vibra-yellow bg-clip-text text-transparent">
               Explore
             </h3>
@@ -153,7 +153,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Coluna 4: Newsletter e Contato */}
           <div>
