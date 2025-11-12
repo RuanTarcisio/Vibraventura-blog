@@ -15,6 +15,17 @@ export type CategoryConfigType = {
 
 // Configuração das categorias com cores, ícones e estilos
 export const categoryConfig: Record<string, CategoryConfigType> = {
+  // Categoria nova mapeada da antiga "eventos"
+  eventos: {
+    name: 'Eventos',
+    icon: '🎪',
+    gradient: 'from-adventureOrange via-accent to-tertiary',
+    bg: 'bg-gradient-to-br from-adventureOrange/10 to-accent/10',
+    text: 'text-adventureOrange',
+    border: 'border-adventureOrange/20',
+    hover: 'hover:shadow-2xl hover:shadow-adventureOrange/20',
+    iconBg: 'bg-adventureOrange',
+  },
   aventuras: {
     name: 'Aventuras',
     icon: '🏔️',
@@ -95,6 +106,37 @@ export const categoryConfig: Record<string, CategoryConfigType> = {
     hover: 'hover:shadow-2xl hover:shadow-earth/20',
     iconBg: 'bg-earth',
   },
+  // Mapeamento das categorias antigas (compatibilidade)
+  desenvolvimento: {
+    name: 'Desenvolvimento',
+    icon: '📈',
+    gradient: 'from-accent via-tertiary to-secondary',
+    bg: 'bg-gradient-to-br from-accent/10 to-tertiary/10',
+    text: 'text-accent',
+    border: 'border-accent/20',
+    hover: 'hover:shadow-2xl hover:shadow-accent/20',
+    iconBg: 'bg-accent',
+  },
+  colaboradores: {
+    name: 'Colaboradores',
+    icon: '👥',
+    gradient: 'from-secondary via-tertiary to-accent',
+    bg: 'bg-gradient-to-br from-secondary/10 to-tertiary/10',
+    text: 'text-secondary',
+    border: 'border-secondary/20',
+    hover: 'hover:shadow-2xl hover:shadow-secondary/20',
+    iconBg: 'bg-secondary',
+  },
+  tecnologia: {
+    name: 'Tecnologia',
+    icon: '💻',
+    gradient: 'from-sky via-accent to-tertiary',
+    bg: 'bg-gradient-to-br from-sky/10 to-accent/10',
+    text: 'text-sky',
+    border: 'border-sky/20',
+    hover: 'hover:shadow-2xl hover:shadow-sky/20',
+    iconBg: 'bg-sky',
+  },
   default: {
     name: 'Viagem',
     icon: '🧭',
@@ -115,13 +157,29 @@ export function getCategoryConfig(category: any): CategoryConfigType {
     return categoryConfig.default;
   }
   
+  // Se é uma string
   if (typeof category === 'string') {
     categoryType = category.toLowerCase().trim();
-  } else if (category?.metadata?.tipo) {
+  }
+  // Se é um objeto com metadata.tipo
+  else if (category?.metadata?.tipo) {
     categoryType = category.metadata.tipo.toLowerCase().trim();
-  } else if (category?.slug) {
+  }
+  // Se é um objeto com title (Cosmic CMS)
+  else if (category?.title) {
+    categoryType = category.title.toLowerCase().trim();
+  }
+  // Se é um objeto com slug
+  else if (category?.slug) {
     categoryType = category.slug.toLowerCase().trim();
   }
+  // Se tem uma propriedade chamada 'tipo'
+  else if (category?.tipo) {
+    categoryType = category.tipo.toLowerCase().trim();
+  }
+  
+  // Normalizar hífens e espaços
+  categoryType = categoryType.replace(/\s+/g, '-');
   
   return categoryConfig[categoryType] || categoryConfig.default;
 }

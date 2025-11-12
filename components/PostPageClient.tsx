@@ -82,7 +82,7 @@ export default function PostPageClient({ post, related }: { post: any; related: 
                 >
                     {/* Badge de categoria */}
                     <div className="mb-6">
-                        <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
+                        <CategoryBadge category={metadata.categoria} />
                     </div>
 
                     {/* Título */}

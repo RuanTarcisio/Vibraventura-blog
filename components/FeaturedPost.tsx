@@ -63,7 +63,7 @@ export default function FeaturedPost({ post }: { post: any }) {
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.3, duration: 0.6 }}
                         >
-                            <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
+                            <CategoryBadge category={metadata.categoria} />
                         </motion.div>
 
                         {/* Tag de destaque */}

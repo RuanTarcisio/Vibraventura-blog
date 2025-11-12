@@ -126,7 +126,7 @@ export default function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
                                         transition={{ delay: 0.3 }}
                                         className="absolute top-4 left-4 lg:top-6 lg:left-6 z-20"
                                     >
-                                        <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
+                                        <CategoryBadge category={metadata.categoria} />
                                     </motion.div>
 
                                     {/* Tag de destaque */}
@@ -172,7 +172,7 @@ export default function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
                                     </motion.div>
 
                                     {/* Título */}
-                                    <Link href={`/${currentPost.slug}`}>
+                                    <Link href={`/post/${currentPost.slug}`}>
                                         <motion.h2
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
@@ -232,7 +232,7 @@ export default function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.6 }}
                                     >
-                                        <Link href={`/${currentPost.slug}`}>
+                                        <Link href={`/post/${currentPost.slug}`}>
                                             <motion.button
                                                 whileHover={{ scale: 1.05, x: 5 }}
                                                 whileTap={{ scale: 0.95 }}

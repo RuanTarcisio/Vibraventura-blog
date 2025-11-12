@@ -90,7 +90,7 @@ export default function RelatedPosts({ posts }: { posts: any[] }) {
 
                                     {/* Badge */}
                                     <div className="absolute top-4 left-4 z-10">
-                                        <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
+                                        <CategoryBadge category={metadata.categoria} />
                                     </div>
 
                                     {/* Ícone de leitura */}

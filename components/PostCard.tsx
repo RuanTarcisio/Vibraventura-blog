@@ -87,7 +87,7 @@ export default function PostCard({ post, index = 0 }: { post: any; index?: numbe
 
                     {/* Badge de categoria */}
                     <div className="absolute top-4 left-4 z-20">
-                        <CategoryBadge category={metadata.tipo_post || metadata.categoria} />
+                        <CategoryBadge category={metadata.categoria} />
                     </div>
 
                     {/* Ícone de leitura animado */}
